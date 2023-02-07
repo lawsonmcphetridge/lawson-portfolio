@@ -1,0 +1,11 @@
+.main-header {
+    width: 100vw;
+    height: 7vh;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+    align-items: center;
+    background-color: #404258;
+     overflow: hidden;
+
+}
