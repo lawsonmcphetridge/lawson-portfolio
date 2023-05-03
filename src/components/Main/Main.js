@@ -1,6 +1,7 @@
 import React from 'react'
 import './Main.scss'
 
+
 export default function Main() {
   return (
     <main className='main-content'>
@@ -16,8 +17,15 @@ export default function Main() {
           MongoDB. I believe that a strong focus on user experience is essential
           to creating successful web applications, and I am dedicated to
           creating intuitive, engaging interfaces that help users achieve their
-          goals. 
+          goals.
         </div>
+
+        <a
+          href='lawson-resume.pdf'
+          target='_blank'
+        >
+          Resume
+        </a>
       </div>
     </main>
   );
