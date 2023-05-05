@@ -1,12 +1,20 @@
 import './App.css';
 import Main from './components/Main/Main';
 import Header from './components/Header/Header';
+import { Routes, Route } from 'react-router-dom';
+
+import Skills from './components/Skills/Skills';
+import { Contact } from './components/Contact/Contact';
+
 function App() {
   return (
     <div className='App'>
       <Header></Header>
-      
-      <Main></Main>
+      <Routes>
+        <Route path='/' Component={Main} />
+        <Route path='/contact' Component={Contact} />
+        <Route path='/Skills' Component={Skills} />
+      </Routes>
     </div>
   );
 }

@@ -1,0 +1,42 @@
+.main {
+    background-color: #474E68;
+    height: 93vh;
+      display: flex;
+  flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.main {
+display: flex;
+width: 100%;
+justify-content: center;
+align-items: center;
+}
+
+.skills {
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.logo-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+     margin-bottom: 10px;
+}
+
+span {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+

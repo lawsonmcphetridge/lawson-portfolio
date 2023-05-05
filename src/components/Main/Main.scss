@@ -1,0 +1,27 @@
+.main-content {
+    background-color: #474E68;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.paragraph {
+  display: flex;
+  width: 50%;
+  font-size: 1.5rem;
+}
+
