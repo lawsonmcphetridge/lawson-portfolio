@@ -1,9 +1,12 @@
 import React from 'react';
-import './Skills.scss'
+import './Skills.scss';
 
 export default function Skills() {
   return (
-    <div className='main'>
+    <div className='skills-section'>
+      <div className='title'>
+        <h2>Skills</h2>
+      </div>
       <div className='skills'>
         <div className='logo-wrapper'>
           <span>JavaScript</span>

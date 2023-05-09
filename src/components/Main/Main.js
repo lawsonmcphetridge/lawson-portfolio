@@ -1,10 +1,10 @@
-import React from 'react'
-import './Main.scss'
-
+import React from 'react';
+import './Main.scss';
 
 export default function Main() {
+
+
   return (
-    <main className='main-content'>
       <div className='introduction'>
         <div className='name'>Hello, my name is Lawson McPhetridge</div>
 
@@ -20,13 +20,9 @@ export default function Main() {
           goals.
         </div>
 
-        <a
-          href='lawson-resume.pdf'
-          target='_blank'
-        >
+        <a href='lawson-resume.pdf' target='_blank'>
           Resume
         </a>
       </div>
-    </main>
   );
 }
