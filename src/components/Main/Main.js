@@ -1,32 +1,34 @@
-import React from 'react'
-import './Main.scss'
+import React from 'react';
+import './Main.scss';
 
-
-export default function Main() {
+const Main = () => {
   return (
-    <main className='main-content'>
+    <div className='main'>
       <div className='introduction'>
-        <div className='name'>Hello, my name is Lawson McPhetridge</div>
-
-        <div className='paragraph'>
-          I am a certified full stack web developer and UI/UX javascript
-          specialist with 2 years of experience creating dynamic, user-friendly
-          websites and web applications. I have worked on projects ranging from
-          small-scale websites for local businesses to large-scale enterprise
-          applications. My proficiency includes expertise in React, Node.js, and
-          MongoDB. I believe that a strong focus on user experience is essential
-          to creating successful web applications, and I am dedicated to
-          creating intuitive, engaging interfaces that help users achieve their
-          goals.
+        <h1 className='name'>Hello, I'm Lawson McPhetridge</h1>
+        <p className='paragraph'>
+          I'm a certified full-stack web developer and UI/UX specialist with
+          over two years of experience creating dynamic, user-friendly websites
+          and web applications. My focus is on creating clean, scalable code and
+          intuitive, engaging interfaces that help users achieve their goals. My
+          proficiency includes expertise in React, Node.js, and MongoDB. I
+          believe that a strong focus on user experience is essential to
+          creating successful web applications, and I'm dedicated to delivering
+          high-quality solutions to my clients.
+        </p>
+        <div className='resume-btn-container'>
+          <a
+            href='lawson-resume.pdf'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='resume-btn'
+          >
+            View My Resume
+          </a>
         </div>
-
-        <a
-          href='lawson-resume.pdf'
-          target='_blank'
-        >
-          Resume
-        </a>
       </div>
-    </main>
+    </div>
   );
-}
+};
+
+export default Main;

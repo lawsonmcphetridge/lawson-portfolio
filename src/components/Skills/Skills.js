@@ -1,18 +1,36 @@
 import React from 'react';
-import './Skills.scss'
+import './Skills.scss';
 
 export default function Skills() {
   return (
-    <div className='main'>
+    <div className='skills-section'>
+      <div className='title'>
+        <h2 className='skills-title'>Skills</h2>
+      </div>
+
       <div className='skills'>
+        <div className='logo-wrapper'>
+          <span>HTML</span>
+          <img
+            className='logo'
+            src='../images/HTML5v2.svg'
+            alt='html-logo'
+          ></img>
+        </div>
+
+        <div className='logo-wrapper'>
+          <span>CSS</span>
+          <img className='logo' src='../images/CSS.svg' alt='css-logo'></img>
+        </div>
         <div className='logo-wrapper'>
           <span>JavaScript</span>
           <img
             className='logo'
-            src='../images/js-logo.png'
+            src='../images/JS.svg'
             alt='javascript-logo'
           ></img>
         </div>
+
         <div className='logo-wrapper'>
           <span>React</span>
           <img
@@ -37,22 +55,7 @@ export default function Skills() {
             alt='typescript-logo'
           ></img>
         </div>
-        <div className='logo-wrapper'>
-          <span>HTML</span>
-          <img
-            className='logo'
-            src='../images/html-logo.png'
-            alt='html-logo'
-          ></img>
-        </div>
-        <div className='logo-wrapper'>
-          <span>CSS</span>
-          <img
-            className='logo'
-            src='../images/css-logo.png'
-            alt='css-logo'
-          ></img>
-        </div>
+
         <div className='logo-wrapper'>
           <span>PostgreSQL</span>
           <img

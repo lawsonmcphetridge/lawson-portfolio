@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import './Contact.scss';
 
 export const Contact = () => {
   const form = useRef();
@@ -40,15 +41,40 @@ export const Contact = () => {
 
   return (
     <div className='main-content'>
-      <form ref={form} onSubmit={sendEmail}>
-        <label>Name</label>
-        <input type='text' name='user_name' onChange={validateInput} />
-        <label>Email</label>
-        <input type='email' name='user_email' onChange={validateInput} />
-        <label>Message</label>
-        <textarea name='message' onChange={validateInput} />
-        <input type='submit' value='Send' disabled={isSubmitDisabled} />
+      <form ref={form} onSubmit={sendEmail} className='email-form'>
+        <h2>Contact Me</h2>
+        <div className='form-group'>
+          <label htmlFor='user_name'>Name</label>
+          <input
+            type='text'
+            name='user_name'
+            id='user_name'
+            onChange={validateInput}
+          />
+        </div>
+        <div className='form-group'>
+          <label htmlFor='user_email'>Email</label>
+          <input
+            type='email'
+            name='user_email'
+            id='user_email'
+            onChange={validateInput}
+          />
+        </div>
+        <div className='form-group'>
+          <label htmlFor='message'>Message</label>
+          <textarea
+            name='message'
+            id='message'
+            onChange={validateInput}
+          ></textarea>
+        </div>
+        <div className='form-group'>
+          <input type='submit' value='Send' disabled={isSubmitDisabled} />
+        </div>
       </form>
     </div>
   );
 };
+
+export default Contact;
