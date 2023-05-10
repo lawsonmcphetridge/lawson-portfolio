@@ -4,7 +4,6 @@
   height: 100vh;
 }
 
-
 .video {
   position: absolute;
   top: 0;
@@ -12,7 +11,8 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-opacity: 0.5;}
+  opacity: 0.5;
+}
 
 .introduction {
   position: absolute;
@@ -20,8 +20,8 @@ opacity: 0.5;}
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 960px;
-  width: 100%;
-  padding: 0 30px;
+  width: 90%;
+  padding: 0 15px;
   text-align: center;
   color: white;
 }
@@ -29,17 +29,16 @@ opacity: 0.5;}
 .name {
   font-size: 3.5rem;
   margin-bottom: 20px;
--webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
- animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .paragraph {
   font-size: 1.5rem;
   line-height: 1.6;
   margin-bottom: 40px;
-  -webkit-animation: slide-in-left 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940) .2s both;
- animation: slide-in-left 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940) .2s both;
-
+  -webkit-animation: slide-in-left 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s both;
+  animation: slide-in-left 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s both;
 }
 
 .resume-btn-container {
@@ -57,8 +56,8 @@ opacity: 0.5;}
   font-weight: 500;
   text-decoration: none;
   transition: background-color 0.2s ease-out;
-    -webkit-animation: slide-in-left 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940) .4s both;
- animation: slide-in-left 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940) .4s both;
+  -webkit-animation: slide-in-left 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.4s both;
+  animation: slide-in-left 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.4s both;
 }
 
 .resume-btn:hover {
@@ -66,28 +65,20 @@ opacity: 0.5;}
   cursor: pointer;
 }
 
+/* Additional Styles for Mobile View */
+@media (max-width: 767px) {
+  .name {
+    font-size: 2.5rem;
+  }
 
-@-webkit-keyframes slide-in-left {
-  0% {
-    -webkit-transform: translateX(-1000px);
-            transform: translateX(-1000px);
-    opacity: 0;
+  .paragraph {
+    font-size: 1.2rem;
+    line-height: 1.4;
   }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    opacity: 1;
+
+  .resume-btn {
+    font-size: 1rem;
+    padding: 10px 20px;
   }
 }
-@keyframes slide-in-left {
-  0% {
-    -webkit-transform: translateX(-1000px);
-            transform: translateX(-1000px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    opacity: 1;
-  }
-}
+
