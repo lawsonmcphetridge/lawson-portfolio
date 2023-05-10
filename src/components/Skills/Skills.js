@@ -3,11 +3,7 @@ import './Skills.scss';
 
 export default function Skills() {
   return (
-    <div className='skills-section'>
-      <div className='title'>
-        <h2 className='skills-title'>Skills</h2>
-      </div>
-
+    <div className='main'>
       <div className='skills'>
         <div className='logo-wrapper'>
           <span>HTML</span>
