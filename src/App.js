@@ -15,7 +15,7 @@ function App() {
         <Route path='/Skills' Component={Skills} />
       </Routes>
       <div className='video-wrapper'>
-        <video className='video' autoPlay loop muted>
+        <video className='video' autoPlay loop muted playsInline>
           <source src='/background.mp4' type='video/mp4' />
         </video>
       </div>
